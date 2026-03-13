@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, MapPin, Clock, Globe, ChevronDown, Menu, X, Instagram, Facebook, Heart, Languages } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/next";
 
 type Language = 'fr' | 'en' | 'ja' | 'zh';
 
@@ -1114,6 +1115,7 @@ export function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
